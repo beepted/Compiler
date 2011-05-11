@@ -1,0 +1,34 @@
+main
+begin
+	int x;
+	int tep;
+	int y;
+	get y;
+	y=y-45*2+y/5*10;
+	print y;
+	x=3-2-1;
+	print x;
+	get x;
+	
+	if (x.>.y)
+	begin
+		y=y*2;
+	
+		if (x.>.y)
+		begin
+			x=3-2-1;
+			print x;
+		end
+
+		x=3-(2-1);
+		print x;
+	end
+	y=y/2;	
+	tep=200;
+	while (y.<=.tep)
+	begin
+		y=y+1;
+		print y;
+	end
+	print y;
+end

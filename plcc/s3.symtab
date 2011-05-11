@@ -1,0 +1,5 @@
+**************Sub Symbol Table no 1 for function main**************
+Lexeme:x Type:0 Value:3
+Lexeme:y Type:0 Value:0
+Lexeme:tep Type:0 Value:200
+KEY FOR SYMBOLTABLE:::0 for Parameters and Result stands for INT and 1 for NONE Data Types:::And for values 0 stands for 0 as a value

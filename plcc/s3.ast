@@ -1,0 +1,88 @@
+Programs
+  |_MainFun
+    |_IntVar
+      |_x Name:x Value:3 Type:0
+    |_IntVar
+      |_tep Name:tep Value:200 Type:0
+    |_IntVar
+      |_y Name:y Value:0 Type:0
+    |_IN_Stmt
+      |_y Name:y Value:0 Type:0
+    |_AssignmentStmt
+      |_y Name:y Value:0 Type:0
+      |_PLUS_Expr
+        |_MINUS_Expr
+          |_y Name:y Value:0 Type:0
+          |_TIMES_Expr
+            |_45
+            |_2
+        |_TIMES_Expr
+          |_DIV_Expr
+            |_y Name:y Value:0 Type:0
+            |_5
+          |_10
+    |_OUT_Stmt
+      |_y Name:y Value:0 Type:0
+    |_AssignmentStmt
+      |_x Name:x Value:3 Type:0
+      |_MINUS_Expr
+        |_MINUS_Expr
+          |_3
+          |_2
+        |_1
+    |_OUT_Stmt
+      |_x Name:x Value:3 Type:0
+    |_IN_Stmt
+      |_x Name:x Value:3 Type:0
+    |_ConditionalStmt
+      |_GT_Exp
+        |_x Name:x Value:3 Type:0
+        |_y Name:y Value:0 Type:0
+      |_AssignmentStmt
+        |_y Name:y Value:0 Type:0
+        |_TIMES_Expr
+          |_y Name:y Value:0 Type:0
+          |_2
+      |_ConditionalStmt
+        |_GT_Exp
+          |_x Name:x Value:3 Type:0
+          |_y Name:y Value:0 Type:0
+        |_AssignmentStmt
+          |_x Name:x Value:3 Type:0
+          |_MINUS_Expr
+            |_MINUS_Expr
+              |_3
+              |_2
+            |_1
+        |_OUT_Stmt
+          |_x Name:x Value:3 Type:0
+      |_AssignmentStmt
+        |_x Name:x Value:3 Type:0
+        |_MINUS_Expr
+          |_3
+          |_MINUS_Expr
+            |_2
+            |_1
+      |_OUT_Stmt
+        |_x Name:x Value:3 Type:0
+    |_AssignmentStmt
+      |_y Name:y Value:0 Type:0
+      |_DIV_Expr
+        |_y Name:y Value:0 Type:0
+        |_2
+    |_AssignmentStmt
+      |_tep Name:tep Value:200 Type:0
+      |_200
+    |_RepetitiveStmt
+      |_LE_Exp
+        |_y Name:y Value:0 Type:0
+        |_tep Name:tep Value:200 Type:0
+      |_AssignmentStmt
+        |_y Name:y Value:0 Type:0
+        |_PLUS_Expr
+          |_y Name:y Value:0 Type:0
+          |_1
+      |_OUT_Stmt
+        |_y Name:y Value:0 Type:0
+    |_OUT_Stmt
+      |_y Name:y Value:0 Type:0

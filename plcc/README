@@ -1,0 +1,76 @@
+###############################################################
+#	Programming Languages & Compiler Construction	      #
+#  Stage 1,2,3: Scanner,Parser,SymbolTable,AST,CodeGenerator  #
+#	   Member 1: Sarthak Dash, 2006B4A7549P               #
+#         Member 2: Rajat Tibrewal, 2006B5A7472P              #
+#		Release Date: 22 April, 2010		      #
+###############################################################
+
+
+1.0 Included Files
+==================
+
+Source Code Files
+-----------------
+->frontend.c:		Driver code for invoking scanner and parser.
+->lexer.h:		Declarations for data structures used in scanner.
+->lexer.c:		Implementation of scanner.
+->parser.h:		Declarations for data structures used in parser.
+->parser.c:		Implementation of parser.
+->symboltable.h		Declarations for data structures used in symboltable
+->symboltable.c		Implementation of the symboltable
+->ast.h			Declarations for the data structures used in Type checked AST
+->ast.c			Implementation of the Type checked AST.
+->codegen.h		Declarations for code generator
+->codegen.c		Implementation of Code Generator
+
+
+Support Files (needed)
+----------------------
+->ffsets:		Listing of FIRST and FOLLOW sets of all nonterminals.
+->productions:		Listing of all the LL(1) grammar productions.
+->Makefile:		To be used for compilation.
+
+Support Files (optional)
+------------------------
+->README:		This file.
+->parsingtable:		Contains the Parsing Table information. If not present,
+			the parser generates it automatically.
+
+Test Files and Outputs (samples)
+--------------------------------
+->abc.c:		Test-file 1
+->abc.c.tok:		List of tokens in Test-file 1
+->abc.c.tok.ptree:	Parse tree for Test-file 1
+->abc.c.symtab		SymbolTable for Test-file 1
+->abc.c.ast		Type checked AST for Test-file 1
+->test.c:		Test-file 2
+->test.c.tok:		List of tokens in Test-file 2
+->test.c.tok.ptree:	Parse tree for Test-file 2
+->test.c.symtab		SymbolTable for Test-file 2
+->test.c.ast		Type checked AST for Test-file 2
+->s3			Test file for Stage 3
+->s3.tok		Tokens for s3
+->s3.tok.ptree		Parse tree for s3
+->s3.symtab		SymbolTable for s3
+->s3.ast		Type checked AST for s3
+->s3.asm		8086 ASSEMBLY CODE FOR s3
+
+2.0 Makefile options
+====================
+
+CommandName		Objective
+-----------     	---------
+make: 			Produces the executable 'compile'.
+make clean: 		Cleans all object files and 'compile' from the directory.
+make deepclean:		Cleans the 'parsingtable' over and above the 'make clean'.
+./compile <filename>	Executes the compiler on the given file and generates assembly code.
+
+
+##############################################################
+#			END OF README			     #
+#		Vyakaran Beta Release 1.0		     #
+# Terms & Conditions: The contents of this code are produced #
+#  AS IS and any malfunctioning or mis-use of the software   #
+#   results in the responsibility of the USER as a WHOLE     #
+##############################################################

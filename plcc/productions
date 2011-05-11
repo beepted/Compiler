@@ -1,0 +1,66 @@
+2 Programs Functions 
+3 Functions MainFun OtherFuns 
+5 MainFun TK_KEY_MAIN TK_KEY_BEGIN FunBody TK_KEY_END
+3 OtherFuns Funct OtherFuns 
+2 OtherFuns ε 
+11 Funct TK_KEY_FUN TK_ID TK_KEY_RESULT ResultType TK_OPEN Parameters TK_CLOSE TK_KEY_BEGIN FunBody TK_KEY_END
+2 ResultType TK_KEY_NONE
+2 ResultType TK_KEY_INT
+3 Parameters Parameter RemainingParameters
+2 Parameters TK_KEY_NONE 
+4 RemainingParameters TK_COMMA Parameter RemainingParameters 
+2 RemainingParameters ε
+3 Parameter TK_KEY_INT TK_ID
+3 FunBody Declarations OtherStatements
+3 Declarations Declaration Declarations
+2 Declarations ε 
+4 Declaration TK_KEY_INT TK_ID TK_SEMI 
+9 Declaration TK_KEY_FUN TK_ID TK_OPEN FunDeclTypes TK_CLOSE TK_KEY_RESULT ResultType TK_SEMI
+2 FunDeclTypes TK_KEY_NONE 
+3 FunDeclTypes TK_KEY_INT FunDeclTypesRest
+4 FunDeclTypesRest TK_COMMA TK_KEY_INT FunDeclTypesRest
+2 FunDeclTypesRest ε
+3 OtherStatements Statement OtherStatements 
+2 OtherStatements ε
+2 Statement AssignmentStmt 
+2 Statement ConditionalStmt
+2 Statement RepetitiveStmt
+2 Statement ReturnStmt
+2 Statement IO_Stmt
+2 Statement FunctionCallStmt
+5 AssignmentStmt TK_ID TK_EQUAL Expression TK_SEMI
+3 Expression Term EPrime
+4 EPrime TK_PLUS Term EPrime
+4 EPrime TK_MINUS Term EPrime 
+2 EPrime ε
+3 Term Factor TPrime
+4 TPrime TK_TIMES Factor TPrime 
+4 TPrime TK_DIV Factor TPrime 
+2 TPrime ε
+4 Factor TK_OPEN Expression TK_CLOSE 
+2 Factor TK_NUM 
+2 Factor TK_ID 
+2 Factor FunctionCall
+3 FunctionCallStmt FunctionCall TK_SEMI
+6 FunctionCall TK_KEY_CALL TK_ID TK_OPEN ActualParams TK_CLOSE
+3 ActualParams TK_ID ActualParamsRest
+3 ActualParams TK_NUM ActualParamsRest
+2 ActualParams TK_KEY_NONE
+3 ActualParamsRest TK_COMMA Rest
+2 ActualParamsRest ε
+3 Rest TK_ID ActualParamsRest
+3 Rest TK_NUM ActualParamsRest
+8 ConditionalStmt TK_KEY_IF TK_OPEN BoolExp TK_CLOSE TK_KEY_BEGIN OtherStatements TK_KEY_END
+6 BoolExp TK_ID TK_DOT BoolOps TK_DOT TK_ID
+2 BoolOps TK_EQUAL
+2 BoolOps TK_NOTEQUAL
+2 BoolOps TK_LT
+2 BoolOps TK_GT
+2 BoolOps TK_LEQ
+2 BoolOps TK_GEQ
+8 RepetitiveStmt TK_KEY_WHILE TK_OPEN BoolExp TK_CLOSE TK_KEY_BEGIN OtherStatements TK_KEY_END
+4 ReturnStmt TK_KEY_RETURN ReturnVal TK_SEMI 
+2 ReturnVal TK_ID
+2 ReturnVal TK_NUM
+4 IO_Stmt TK_KEY_PRINT TK_ID TK_SEMI
+4 IO_Stmt TK_KEY_GET TK_ID TK_SEMI
